@@ -1,9 +1,12 @@
 import random
 
-sugeneguotas = random.randint(1, 101)
+print("Įveskite spėjamo skaičiaus diapazoną: ")
+nuo = int(input("Nuo: "))
+iki = int(input("Iki: "))
+sugeneguotas = random.randint(nuo, iki)
 spejimai = 0
 while True:
-    spejimas = int(input("Spėkite skaičių nuo 0 iki 100: "))
+    spejimas = int(input(f"Spėkite skaičių nuo {nuo} iki {iki}: "))
     spejimai += 1
     if spejimas > sugeneguotas:
         print("Mažiau")
