@@ -1,4 +1,10 @@
 import random
 
 sugeneguotas = random.randint(1, 101)
-spejimas = int(input("Spėkite skaičių: "))
+print(sugeneguotas)
+while True:
+    spejimas = int(input("Spėkite skaičių: "))
+    if spejimas > sugeneguotas:
+        print("Mažiau")
+    if spejimas < sugeneguotas:
+        print("Daugiau")
