@@ -1,5 +1,4 @@
-
 import random
 
 sugeneguotas = random.randint(1, 101)
-print(sugeneguotas)
+spejimas = int(input("Spėkite skaičių: "))
